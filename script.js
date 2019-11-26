@@ -15,7 +15,7 @@ function click(num) {
 	cardDiv.append(cardBody);
 	cardBody.append(h4);
 	$('section').append(colDiv);
-	h4.click(() => {
+	cardBody.click(() => {
 		var friend = friends[num % friends.length];
 		var place = places[num % places.length];
 		var weapon = weapons[num % weapons.length];
